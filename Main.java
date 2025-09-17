@@ -71,7 +71,7 @@ public class Main {
 
 //find the duplicate number in  an array
 
-class Main{
+/*class Main{
     public static void main(String[] args) {
         int arr[]={1,2,2};
         int n=arr.length;
@@ -93,6 +93,74 @@ class Main{
             fast=arr[fast];
         }
         return slow;
+    }
+}*/
+
+
+//circular loop array
+
+class Main{
+    public static void main(String[] args) {
+        int arr[]={-1,-2,-3,-4,-5,6};
+        int n=arr.length;
+         System.out.println(circularLoopArray(arr,n));
+
+    }
+    public static boolean circularLoopArray(int arr[], int n){
+        if(arr==null || n<2){
+            return false;
+        }
+
+        for(int i=0;i<n;i++){
+            if(arr[i]==0){
+                continue;
+            }
+
+             int slow=i;
+             int fast=i;
+             boolean isForward=arr[i]>0;
+
+             while(true){
+                slow=nextIndex(arr,isForward,slow);
+                if(slow==-1){
+                    break;
+                }
+                fast=nextIndex(arr,isForward,fast);
+                if(fast==-1){
+                    break;
+                }
+                fast=nextIndex(arr,isForward,fast);
+                if(fast==-1){
+                    break;
+                }
+
+                if(slow==fast){
+                    return true;
+                }
+             }
+             int j=i;
+
+             while(arr[j]!=0 && (arr[i]>0)==isForward){
+                int next=((arr[j]+j)%n+n)%n;
+                arr[j]=0;
+                j=next;
+             }
+        }
+        return false;
+    }
+    public static int nextIndex(int arr[], boolean isForward, int current ){
+        boolean direction=arr[current]>0;
+
+        if(isForward!=direction){
+            return -1;
+        }
+        int n=arr.length;
+        int next=((arr[current]+current)%n+n)%n;
+        if(next==current){
+            return -1;
+        }
+        return next;
+
     }
 }
 
