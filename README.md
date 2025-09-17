@@ -50,7 +50,7 @@ Follow my journey & star ⭐ this repo if you’re on the same path!
 ---
 
 ## ✨ Connect with Me
-- [LinkedIn](https://www.linkedin.com/in/ankitsaraswat)  
+- [LinkedIn](https://www.linkedin.com/in/ankit-saraswat-57a9bb238/)  
 - [GitHub](https://github.com/ANKITSARASWAT12345)  
 
 ---
