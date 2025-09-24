@@ -18,7 +18,7 @@ public class LinkedHashmap {
         LinkedHashMap<String, Integer> mp1=new LinkedHashMap<>();
          mp1.put("apple", 2);
         mp1.put("orange", 3);
-        mp1.put("Mango",1);
+        mp1.put("Mango", 1);
         
         for(Map.Entry<String, Integer>entry:mp1.entrySet()){
             System.out.println(entry.getKey()+": "+entry.getValue());
