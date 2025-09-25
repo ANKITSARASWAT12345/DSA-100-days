@@ -45,10 +45,35 @@ class Person{
 
 
 
-class Person{
+/*class Person{
     public static void main(String[] args) {
           int[] nums = {1, 1, 1};
         System.out.println(subarraySum(nums, 2)); 
+    }
+
+    public static int subarraySum(int nums[], int sum){
+        int curr_sum=0;
+        HashMap<Integer, Integer> mp=new HashMap<>();
+        mp.put(0, 1);
+      int count=0;
+
+        for(int num:nums){
+            curr_sum+=num;
+
+            if(mp.containsKey(curr_sum-sum)){
+                count+=mp.get(curr_sum-sum);
+            }
+            mp.put(curr_sum, mp.getOrDefault(curr_sum, 0)+1);
+        }
+        return count;
+    }
+}*/
+
+
+class Person{
+    public static void main(String[] args) {
+          int[] nums = {1, 1, 1};
+        System.out.println(subarraySum(nums, 1)); 
     }
 
     public static int subarraySum(int nums[], int sum){
