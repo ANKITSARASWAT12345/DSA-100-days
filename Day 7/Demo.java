@@ -65,7 +65,7 @@ class Demo {
             return 5;
         }
         int result=0;
-        int place =1;
+        int placee =1;
         
         while(n>0){
             int digit=n%10;
@@ -73,8 +73,8 @@ class Demo {
             if(digit==0){
                 digit=5;
             }
-            result+=digit*place;
-            place=place*10;
+            result+=digit*placee;
+            placee=placee*10;
             n/=10;
         }
         return result;
