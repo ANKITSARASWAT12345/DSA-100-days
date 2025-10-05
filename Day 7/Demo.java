@@ -51,7 +51,7 @@ Explanation: There are two zeroes in 1004 on replacing all zeroes with 5, the ne
 class Demo {
 
    public static void main(String[] args) {
-    int n=1004;
+    int n=1005;
     System.out.println(convertfive(n));
    }
 
