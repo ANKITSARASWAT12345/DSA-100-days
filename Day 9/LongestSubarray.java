@@ -82,7 +82,7 @@ Given the integer array cardPoints and the integer k, return the maximum score y
 
 
 
-class LongestSubarray {
+/*class LongestSubarray {
 
     public static void main(String[] args) {
         int cardPoints[] = {1,2,3,4,5,6,1}; 
@@ -111,3 +111,4 @@ class LongestSubarray {
         return maxSum;
     }
 }
+*/
