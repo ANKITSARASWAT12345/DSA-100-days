@@ -94,6 +94,7 @@ class LongestSubarray {
         int leftSum=0;
         int rightSum=0;
         int maxSum=0;
+        int a=0;
 
         for(int i=0;i<k;i++){
             leftSum+=cardPoints[i];
