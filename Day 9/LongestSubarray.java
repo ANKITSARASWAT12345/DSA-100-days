@@ -86,7 +86,7 @@ class LongestSubarray {
 
     public static void main(String[] args) {
         int cardPoints[] = {1,2,3,4,5,6,1}; 
-        int k = 6;
+        int k = 1;
         System.out.println("Maximum score obtained"+maxScore(cardPoints, k));
 
     }
