@@ -29,7 +29,7 @@ public class SlidingWindow {
     }
     public static void main(String[] args) {
         int arr[]={1,1,1,0,0,0,1,1,1,1,0};
-        int k=2;
+        int k=3;
         int res=longestOnes(arr,k);
         System.out.println(res);
     }
